@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@font-face {
+    font-family: 'Museo Slab 500';
+    src: url('MuseoSlab-500.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(15, 15, 15);
+    background-image: url(https://img.itch.zone/aW1nLzQ2NjE2ODMucG5n/original/lwaBj1.png);
+    backdrop-filter: blur(3px);
+    color: white;
+    font-family: 'Museo Slab 500', Arial, sans-serif;
+    font-family: 'Gamja Flower';
+    text-shadow: 0px 3px 3px black;
+    margin: 0;
+}
+
+a {
+    color: #f486aa;
+    text-decoration: underline;
+    transition-duration: 0.25s;
+}
+
+a:hover {
+    color: #de59ff;
+}
+
+header {
+    padding: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 30px;
+    background: rgb(15, 39, 146);
+    border-bottom: 4px ridge white;
+}
+
+header img {
+    width: 60px;
+}
+
+.discord-link {
+    margin-left: auto;
+}
+
+section {
+    flex-grow: 1;
+
+    margin: 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+}
+
+.description {
+    background: linear-gradient(135deg, rgb(1, 48, 255, 0.7), rgb(0, 17, 95, 0.8));
+    border: 4px ridge white;
+    border-radius: 25px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.5);
+    margin: 0px 500px;
+    text-align: center;
+    padding: 10px;
+    backdrop-filter: blur(5px);
+}
+
+.game-a-month-backdrop {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    transform: translate(0, -50%);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), black 10%, black 80%, rgba(0, 0, 0, 0) 100%);
+}
+
+.game-a-month {
+    font-size: 40px;
+    color: white;
+    background: linear-gradient(to bottom, rgb(71, 180, 255), rgb(80, 101, 255));
+    background-clip: text;
+    color: transparent;
+    text-shadow: none;
+    padding: 0px 30px;
+    margin: 0;
+}
+
+.game-title {
+    font-size: 75px;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.game-description {
+    font-size: 30px;
+}
+
+.links-container {
+
+    padding-right: 50px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.instructions {
+    margin: 0;
+    font-size: 40px;
+    text-align: center;
+}
+
+iframe {}
+
+footer {
+    height: 5vh;
+    padding: 10px 20px;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(121, 121, 121, 0.3);
+}
