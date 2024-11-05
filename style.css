@@ -18,6 +18,7 @@ body {
     flex-direction: column;
     background: rgb(15, 15, 15);
     background-image: url(https://img.itch.zone/aW1nLzQ2NjE2ODMucG5n/original/lwaBj1.png);
+    background-attachment: fixed;
     backdrop-filter: blur(3px);
     color: white;
     font-family: 'Museo Slab 500', Arial, sans-serif;
@@ -52,6 +53,16 @@ header img {
     width: 60px;
 }
 
+@media (max-width: 450px) {
+    header {
+        font-size: 20px;
+    }
+
+    header img {
+        width: 40px;
+    }
+}
+
 .discord-link {
     margin-left: auto;
 }
@@ -79,6 +90,8 @@ section {
     backdrop-filter: blur(5px);
 }
 
+
+
 .game-a-month-backdrop {
     position: absolute;
     top: 0%;
@@ -98,20 +111,35 @@ section {
     margin: 0;
 }
 
+@media (max-width: 450px) {
+    .game-a-month {
+        font-size: 20px;
+    }
+}
+
 .game-title {
     font-size: 75px;
     margin-top: 0;
     margin-bottom: 10px;
 }
 
+@media (max-width: 450px) {
+    .game-title {
+        font-size: 50px;
+    }
+}
+
 .game-description {
     font-size: 30px;
 }
 
+@media (max-width: 450px) {
+    .game-description {
+        font-size: 20px;
+    }
+}
+
 .links-container {
-
-    padding-right: 50px;
-
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -124,6 +152,12 @@ section {
     margin: 0;
     font-size: 40px;
     text-align: center;
+}
+
+@media (max-width: 450px) {
+    .instructions {
+        font-size: 30px;
+    }
 }
 
 iframe {}
